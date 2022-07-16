@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="post" id="form">
+      <label for="">feee</label>
+      <select name="slct1" id="slct1" onchange="populate(this.id, 'slct2')">
+        <option value="">Choose Fee</option>
+      </select>
+      <br />
+      <label for="">Nationality</label>
+      <select name="slct2" id="slct2">
+        <option value="">Choose Nationality</option>
+      </select>
+      <br />
+      <label for="">Courses</label>
+      <select name="slct3" id="slct3">
+        <option value="">Choose Courses</option>
+        <option value="medical">Medical</option>
+        <option value="dental">Dental</option>
+        <option value="ayurveda">Ayurveda</option>
+      </select>
+      <br />
+      <label for="">Level</label>
+      <select name="slct4" id="slct4">
+        <option value="">Choose Level</option>
+        <option value="ug">UG</option>
+        <option value="pg">PG</option>
+        <option value="phd">PHD</option>
+        <option value="ug-diploma">DIPLOMA</option>
+      </select>
+      <br />
+      <button type="submit">button</button>
+    </form>
+    <label for="">total</label>
+    <textarea name="fees" id="fees" cols="10" rows="1"></textarea>
+    <script src="index.js"></script>
+  </body>
+</html>
