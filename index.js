@@ -141,5 +141,5 @@ form.addEventListener("submit", function (event) {
     }
   }
   const fe = document.getElementById("fees");
-  fe.innerHTML = value;
+  fe.innerHTML = undefined ? "please enter a valid level" : value;
 });
